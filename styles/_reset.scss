@@ -1,0 +1,15 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+img, picture, svg {
+	display: block;
+	max-width: 100%;
+}
+
+svg {
+	stroke:red;
+}

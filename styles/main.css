@@ -1,0 +1,205 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+img, picture, svg {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  stroke: red;
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "HankenGrotesk";
+  font-weight: 500;
+  background-color: rgb(235, 241, 255);
+}
+
+.result-summary {
+  max-width: 38rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 40px rgb(200, 199, 255);
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.result-summary .result, .result-summary .summary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result-summary .summary-title {
+  align-self: flex-start;
+}
+.result-summary .result > * {
+  padding-block: 1.25em;
+}
+.result-summary .result {
+  padding: 0.5em 2.5em;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 25px;
+}
+.result-summary .result .result-total {
+  background-image: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vh;
+  font-size: 1rem;
+  color: rgba(200, 199, 255, 0.35);
+  width: 10em;
+  aspect-ratio: 1;
+}
+.result-summary .result .result-total span {
+  margin-block-end: -5%;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.result-summary .result-textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75em;
+  text-align: center;
+  padding-block-end: 2em;
+}
+.result-summary .result-textarea p:first-child {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: rgb(235, 241, 255);
+}
+.result-summary .result-textarea p:last-child {
+  color: rgb(200, 199, 255);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.result-title, .summary-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgb(200, 199, 255);
+}
+
+.summary {
+  padding: 0.5em 2em;
+}
+.summary .summary-title {
+  padding-block: 1.25em;
+}
+.summary button {
+  width: 100%;
+  padding-block: 0.75em;
+  border-radius: 25px;
+  margin-block: 2em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(48, 59, 90);
+  border: none;
+}
+.summary button:hover {
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+.summary-title {
+  color: rgb(48, 59, 90);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+}
+.skills .skill {
+  border-radius: 10px;
+  padding: 0.75em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid;
+}
+.skills .skill .skill-score {
+  color: grey;
+}
+.skills .skill .skill-score span {
+  font-weight: 700;
+  color: rgb(48, 59, 90);
+}
+.skills .skill .skill-name {
+  display: flex;
+  gap: 0.5em;
+}
+.skills .skill:nth-child(1) {
+  background-color: rgba(255, 87, 87, 0.05);
+  outline-color: rgba(255, 87, 87, 0.15);
+}
+.skills .skill:nth-child(1) .skill-name svg {
+  stroke: rgb(255, 87, 87);
+}
+.skills .skill:nth-child(1) .skill-name p {
+  color: rgb(255, 87, 87);
+}
+.skills .skill:nth-child(2) {
+  background-color: rgba(255, 176, 31, 0.05);
+  outline-color: rgba(255, 176, 31, 0.15);
+}
+.skills .skill:nth-child(2) .skill-name svg {
+  stroke: rgb(255, 176, 31);
+}
+.skills .skill:nth-child(2) .skill-name p {
+  color: rgb(255, 176, 31);
+}
+.skills .skill:nth-child(3) {
+  background-color: rgba(0, 189, 145, 0.05);
+  outline-color: rgba(0, 189, 145, 0.15);
+}
+.skills .skill:nth-child(3) .skill-name svg {
+  stroke: rgb(0, 189, 145);
+}
+.skills .skill:nth-child(3) .skill-name p {
+  color: rgb(0, 189, 145);
+}
+.skills .skill:nth-child(4) {
+  background-color: rgba(17, 37, 212, 0.05);
+  outline-color: rgba(17, 37, 212, 0.15);
+}
+.skills .skill:nth-child(4) .skill-name svg {
+  stroke: rgb(17, 37, 212);
+}
+.skills .skill:nth-child(4) .skill-name p {
+  color: rgb(17, 37, 212);
+}
+
+@media (max-width: 550px) {
+  .result-summary {
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .result-summary .result {
+    border-radius: 0 0 25px 25px;
+    padding-block: 0 1em;
+  }
+  .result-summary .result-title {
+    padding-block: 1em;
+  }
+  .result-msj {
+    padding-inline: 1.25em;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "HankenGrotesk";
+	font-weight: 100 900;
+	font-display: swap;
+	src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+$ff: "HankenGrotesk";
+
+$fs-100: .75rem;
+$fs-200: 1rem;
+$fs-300: 1.25rem;
+$fs-400: 1.5rem;
+$fs-500: 1.75rem;
+
+$fw-500: 500;
+$fw-700: 700;
+$fw-900: 900;

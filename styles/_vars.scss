@@ -1,0 +1,45 @@
+// Generals
+$br: 25px;
+
+$pd-100: .5em;
+$pd-200: .75em;
+$pd-300: 1em;
+$pd-400: 1.25em;
+$pd-500: 1.5em;
+$pd-600: 2em;
+$pd-700: 2.25em;
+$pd-800: 2.5em;
+
+// Neutral colors
+$clr-neutral-100: rgb(255, 255, 255);
+$clr-neutral-300: rgb(235, 241, 255);
+$clr-neutral-600: rgb(200, 199, 255);
+$clr-neutral-900: rgb(48, 59, 90);
+
+
+// ### Primary colors
+$clr-red: rgb(255, 87, 87);
+$clr-yellow: rgb(255, 176, 31);
+$clr-teal: rgb(0, 189, 145);
+$clr-blue: rgb(17, 37, 212);
+
+// Primary colors with transparency
+@function clr-red-rgba($val) {
+	@return rgba($clr-red, $val);
+}
+@function clr-yellow-rgba($val) {
+	@return rgba($clr-yellow, $val);
+}
+@function clr-teal-rgba($val) {
+	@return rgba($clr-teal, $val);
+}
+@function clr-blue-rgba($val) {
+	@return rgba($clr-blue, $val);
+}
+
+// Gradients colors
+$primary-bg-gradient: hsl(252, 100%, 67%);
+$secundary-bg-gradient: hsl(241, 81%, 54%);
+
+$primary-cir-gradient: hsla(256, 72%, 46%, 1);
+$secundary-cir-gradient: hsla(241, 72%, 46%, 0);

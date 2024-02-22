@@ -10,6 +10,10 @@ img, picture, svg {
   max-width: 100%;
 }
 
+.result-summary {
+  scale: 1.2;
+}
+
 svg {
   stroke: red;
 }
@@ -191,6 +195,7 @@ body {
   .result-summary {
     flex-direction: column;
     border-radius: 0;
+    scale: 1;
   }
   .result-summary .result {
     border-radius: 0 0 25px 25px;

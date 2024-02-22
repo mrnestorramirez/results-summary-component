@@ -210,6 +210,7 @@ body {
 	.result-summary {
 		flex-direction: column;
 		border-radius: 0;
+		scale: 1;
 
 		.result {
 			border-radius: 0 0 $br $br;
